@@ -27,7 +27,7 @@ graph TD
     A --> D[MCP Protocol]
     D --> E[MCP Server]
     D --> F[MCP Client]
-    G[User Interface] --> A
+    G[CLI] --> A
     H[Auto-Tagging Engine] --> B
     H --> I[Keyword Fallback]
 ```
