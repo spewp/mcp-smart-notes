@@ -1,4 +1,6 @@
-# 🧠 MCP Smart Note-Taking System
+# mcp-smart-notes
+Prototype Model Context Protocol (MCP) note-taking system with intelligent auto-tagging powered by local LLMs. Full MCP specification compliance, JSON-RPC 2.0 transport, and robust error handling with graceful fallbacks.
+# MCP Smart Note-Taking System
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-green.svg)](https://modelcontextprotocol.io)
@@ -6,7 +8,7 @@
 
 A sophisticated **Model Context Protocol (MCP)** compliant note-taking system with **intelligent automatic tagging** capabilities powered by local Large Language Models via Ollama.
 
-## ✨ Features
+##  Features
 
 - 🏷️ **Intelligent Auto-Tagging**: Uses LLM analysis to automatically categorize notes
 - 📝 **Full MCP Compliance**: Implements complete MCP specification for seamless AI integration  
@@ -67,21 +69,6 @@ graph TD
 ```bash
 python smart_tagging_bridge.py
 ```
-
-#### 🔧 Full MCP Server + Client
-```bash
-# Terminal 1: Start MCP Server
-python note_server.py
-
-# Terminal 2: Start MCP Client
-python ollama_mcp_client.py ./note_server.py
-```
-
-#### 🧪 Run Tests
-```bash
-python test_auto_tagging.py
-```
-
 ## 💡 Example Usage
 
 ```
@@ -105,7 +92,7 @@ MCP-Testing/
 ├── 📄 requirements.txt             # Python dependencies
 ├── 📄 README.md                    # This file
 ├── 📄 .gitignore                   # Git ignore patterns
-└── 📁 Documentation for Agent/     # MCP protocol documentation
+└── 📁 Documentation/     # MCP protocol documentation
 ```
 
 ## 🛠️ Available Tools
@@ -141,21 +128,6 @@ MCP-Testing/
 - **File Corruption**: Silent skip of corrupted JSON files
 - **Network Issues**: Retry mechanisms with exponential backoff
 
-## 🧪 Testing
-
-Run the comprehensive test suite:
-
-```bash
-python test_auto_tagging.py
-```
-
-**Test Coverage:**
-- ✅ Auto-tagging accuracy verification
-- ✅ Fallback mechanism validation  
-- ✅ Data persistence testing
-- ✅ Search functionality validation
-- ✅ Error scenario handling
-
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -182,19 +154,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🐛 Known Issues
 
-- Auto-tagging requires Ollama to be running (graceful fallback available)
 - Large note collections may experience slower search performance
-- Windows-specific path handling in some edge cases
-
-## 🚀 Future Enhancements
-
-- [ ] Additional tag categories
-- [ ] Export/import functionality  
-- [ ] Web interface
-- [ ] Multi-language support
-- [ ] Advanced search filters
-- [ ] Note templates
-
+  
 ---
 
 ⭐ **Star this repository if you find it useful!** ⭐ 
