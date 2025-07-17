@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/spewp-mcp-smart-notes-badge.png)](https://mseep.ai/app/spewp-mcp-smart-notes)
+
 # mcp-smart-notes
 Prototype Model Context Protocol (MCP) note-taking system with intelligent auto-tagging powered by local LLMs. Full MCP specification compliance, JSON-RPC 2.0 transport, and robust error handling with graceful fallbacks.
 # MCP Smart Note-Taking System
